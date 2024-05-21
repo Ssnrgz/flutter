@@ -1,19 +1,13 @@
-# ssdeneme
+rosbridge kurmak için:
 
-A new Flutter project.
+1. Sistem Paketlerini Güncelleyin
+Öncelikle, sisteminizdeki paketlerin güncel olduğundan emin olun: sudo apt-get update
 
-## Getting Started
+2. ROS Noetic'in Yüklü Olduğunu Kontrol Edin
+ROS Noetic'in sisteminizde yüklü olduğundan emin olun. Eğer ROS Noetic yüklü değilse, ROS Noetic Kurulum Kılavuzu adımlarını izleyerek kurulum yapabilirsiniz.
 
-This project is a starting point for a Flutter application.
+3. ROSBridge Server'ı Kurun
+Aşağıdaki komutu terminalde çalıştırarak ROSBridge Server'ı kurun: sudo apt-get install ros-noetic-rosbridge-server
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# flutter
-# flutter
-# flutter
+4. ROSBridge Server'ı Başlatın
+Kurulum tamamlandıktan sonra, ROSBridge Server'ı başlatmak için aşağıdaki komutu kullanabilirsiniz: roslaunch rosbridge_server rosbridge_websocket.launch
